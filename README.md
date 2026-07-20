@@ -303,73 +303,6 @@ This is a personal learning project, but if you fork it:
 
 ---
 
-## How Claude can help organize this repo
-
-Claude can review and improve:
-- **Code quality:** type hints, docstrings, function organization
-- **Module boundaries:** does `store.py` actually stay as the single "write" choke point?
-- **Test coverage:** what tests are missing?
-- **Documentation:** are the comments clear for someone reading your code 6 months from now?
-- **Architecture:** "Does the data model need a change before we go too far?"
-
-See **"Granting Claude access"** section below.
-
----
-
-## Granting Claude access to your repo
-
-You have two main options:
-
-### Option 1: GitHub + Claude's GitHub MCP (easiest)
-
-1. Push your repo to GitHub (public or private)
-2. In Claude.ai or Claude Desktop, enable the GitHub connector
-3. Ask Claude: "Review the architecture of my paper-brain repo" or "refactor the store.py module"
-
-Claude will:
-- Read your files
-- Understand the structure
-- Suggest improvements
-- In some cases, create draft PRs
-
-**Pros:** No setup, Claude sees your live code, can propose PRs.  
-**Cons:** Your repo is on GitHub; requires you to authenticate Claude with your GitHub account.
-
-### Option 2: Local file access via Claude Desktop (most private)
-
-1. Install Claude Desktop (https://claude.ai/download)
-2. Open your repo folder in Claude Desktop
-3. Ask Claude to help organize; it has access to all files locally
-
-**Pros:** Everything stays on your machine; no GitHub account needed.  
-**Cons:** Only works in Claude Desktop, not claude.ai.
-
-### Option 3: Copy-paste into this chat (simplest start)
-
-1. Share your repo structure: `tree -I '__pycache__|*.egg-info' paper-brain/`
-2. Paste key files (cli.py, store.py, etc.)
-3. Ask for feedback
-
-**Pros:** Works now, no setup.  
-**Cons:** Manual; limited to what fits in the chat.
-
----
-
-## Recommended first steps for Claude help
-
-**Once your Phase 0 skeleton is ready**, ask Claude:
-
-> "I'm at Phase 1 now. Here's my project structure and my ingest.py. 
-> Before I build further, review:
-> 1. Are my module boundaries clean?
-> 2. Is store.py ready to be the single write choke point?
-> 3. What's missing from my error handling?
-> 4. Should I add type hints anywhere?"
-
-This way Claude becomes a **code reviewer** early, not a "fix everything at the end" tool.
-
----
-
 ## License
 
 MIT — see LICENSE file.
@@ -382,8 +315,7 @@ MIT — see LICENSE file.
 - Learning syllabus: See `LEARNING.md` (coming)
 - API reference: Semantic Scholar docs at https://www.semanticscholar.org/product/api
 - Claude API: https://docs.anthropic.com
-
 ---
 
-**Built as a learning project by [your name] in 2026.**  
-*This tool is designed to teach AI engineering while solving a real research problem.*
+**Built as a learning project by Rubayea AlKetbi in 2026.**  
+*This tool is designed to understand AI engineering while solving a real research problem.*

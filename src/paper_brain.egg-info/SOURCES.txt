@@ -1,0 +1,13 @@
+pyproject.toml
+src/paper_brain/cli.py
+src/paper_brain/config.py
+src/paper_brain/discover.py
+src/paper_brain/embed.py
+src/paper_brain/graph.py
+src/paper_brain/ingest.py
+src/paper_brain/store.py
+src/paper_brain/summarize.py
+src/paper_brain.egg-info/PKG-INFO
+src/paper_brain.egg-info/SOURCES.txt
+src/paper_brain.egg-info/dependency_links.txt
+src/paper_brain.egg-info/top_level.txt
